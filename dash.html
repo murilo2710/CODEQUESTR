@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeQuest Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="dash.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div id="nav-bar">
+        <div id="nav-header"><a id="nav-title" href="#">CODE<span>QUEST</span></a></div>
+        <div id="nav-content">
+            <a href="modulos.html" class="nav-button">
+                <i class="fas fa-cubes"></i>
+                <span>Módulos</span>
+            </a>
+            <a href="pdfs.html" class="nav-button">
+                <i class="fas fa-file-pdf"></i>
+                <span>PDFS</span>
+            </a>
+            <a href="home.html" class="nav-button">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="ajuda.html" class="nav-button">
+                <i class="fas fa-question-circle"></i>
+                <span>Ajuda</span>
+            </a>
+            <a href="perfil.html" class="nav-button">
+                <i class="fas fa-user"></i>
+                <span>Perfil</span>
+            </a>
+            <div id="nav-content-highlight"></div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+   
+        <h1>Olá Aluno!</h1>
+        <p>Aqui está uma análise completa do seu desempenho e evolução ao longo do CodeQuest.</p>
+
+        <div class="content-row">
+            <!-- Taxa de Acerto Geral -->
+            <div class="card">
+                <h2>Taxa De Acerto Geral</h2>
+                <div class="percentage-circle">
+                    <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70" id="general-progress"></circle>
+                    </svg>
+                    <div class="percentage-value">
+                        <span id="general-percentage-text">0%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Taxa de Acerto em Módulos -->
+            <div class="card">
+                <h2>Taxa De Acerto Em Módulos</h2>
+                <ul>
+                    <li>PHP <span class="circle" id="php-percentage">0%</span></li>
+                    <li>Javascript <span class="circle" id="javascript-percentage">0%</span></li>
+                    <li>Python <span class="circle" id="python-percentage">0%</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content-row">
+            <!-- Progresso -->
+            <div class="card">
+                <h2>Progresso</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Módulos</th>
+                            <th>Tempo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>HTML</td><td>+1Hrs</td></tr>
+                        <tr><td>PHP</td><td>30min</td></tr>
+                        <tr><td>JAVASCRIPT 2</td><td>15min</td></tr>
+                        <tr><td>PHP 2</td><td>+2Hrs</td></tr>
+                        <tr><td>PYTHON 3</td><td>45min</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Últimas Conquistas -->
+            <div class="card">
+                <h2>Últimas Conquistas</h2>
+                <ul>
+                    <li>Conquista ao completar o primeiro módulo</li>
+                    <li>Conquista para quem estuda por 5 dias consecutivos</li>
+                    <li>Concedida ao corrigir 10 erros no código</li>
+                    <li>Para quem completa três módulos em um único dia</li>
+                    <li>Conquista para completar um módulo em menos de uma hora</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
